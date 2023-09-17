@@ -53,18 +53,15 @@ project "glfw"
 
     filter "system:linux"
         files {
-            "src/posix_time.h",
-            "src/posix_thread.h",
             "src/posix_module.c",
             "src/posix_time.c",
             "src/posix_thread.c",
-            "src/x11_platform.h",
-            "src/xkb_unicode.h",
             "src/x11_init.c",
             "src/x11_monitor.c",
             "src/x11_window.c",
             "src/xkb_unicode.c",
             "src/glx_context.c",
+            "src/linux_joystick.c",
         }
         defines {
 			"_GLFW_X11"
